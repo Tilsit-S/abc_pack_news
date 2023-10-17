@@ -1,0 +1,297 @@
+.feedback {
+    overflow: hidden;
+    position: relative;
+    background-color: $green;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 78.13vw;
+        padding: 5.60vw 0 1.60vw 0;
+
+        @media (max-width: 1100px) {
+            width: 90.13vw;
+        }
+
+        @media (max-width: 910px) {
+            width: 93.13vw;
+        }
+    }
+
+    .social-links {
+        max-width: 330px;
+
+        img {
+            margin-bottom: 26px;
+        }
+
+        &__description {
+            width: 264px;
+            font-size: 14px;
+            line-height: 21px;
+            color: $white;
+            margin-bottom: 24px;
+
+            @media (max-width: 910px) {
+                font-size: 12px;
+            }
+        }
+
+        &__list {
+            width: 230px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 68px;
+        }
+
+        &__item {
+            img {
+                margin: 0;
+            }
+        }
+
+        &__privacy {
+            font-size: 12px;
+            line-height: normal;
+            color: $white;
+            border: none;
+            background-color: transparent;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            span {
+                color: $red;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .catalog {
+        &__title {
+            font-size: 20px;
+            line-height: normal;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            a {
+                color: $white;
+
+                @media (max-width: 910px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        &__title {
+            font-size: 20px;
+            line-height: normal;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            a {
+                color: $white;
+
+                @media (max-width: 910px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        &__title {
+            font-size: 20px;
+            line-height: normal;
+            color: $white;
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+
+            a {
+                display: inline-flex;
+                color: $white;
+
+                @media (max-width: 910px) {
+                    font-size: 12px;
+                }
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .feedback {
+        position: relative;
+    
+        &__wrapper {
+            width: 91.15vw;
+            padding: 60px 0 14px 0;
+        }
+    
+        .social-links {
+            width: 47.20vw;
+    
+            img {
+                width: 196px;
+                margin-bottom: 19px;
+
+                @media (max-width: 550px) {
+                    margin-bottom: 219px;
+                }
+            }
+    
+            &__description {
+                max-width: 225px;
+                font-size: 12px;
+                line-height: 18px;
+                margin-bottom: 16px;
+            }
+    
+            &__list {
+                width: 180px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 30px;
+            }
+    
+            &__item {
+                
+                a {
+
+                    img {
+                        width: 38px;
+                        height: 38px;
+                        margin: 0;
+                    }
+                }
+            }
+    
+            &__privacy {
+                font-size: 12px;
+                line-height: normal;
+                color: $white;
+                margin-bottom: 20px;
+    
+                span {
+                    color: $red;
+                    text-decoration: underline;
+                }
+            }
+        }
+    
+        .catalog {
+            width: 220px;
+            position: absolute;
+            top: 160px;
+            left: 23px;
+
+
+            &__title {
+                display: block;
+                font-size: 16px;
+                line-height: normal;
+                margin-bottom: 16px;
+                padding: 8px 0;
+                text-align: center;
+                border-radius: 18px;
+                border: 1px solid $white;
+
+            }
+    
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+
+                &:nth-child(5) {
+                    display: none;
+                }
+    
+                a {
+                    font-size: 12px;
+                    line-height: normal;
+                    padding-left: 0;
+                    color: $white;
+                }
+            }
+        }
+    
+        .navigation {
+            display: none;
+        }
+    
+        .contacts {
+            position: absolute;
+            top: 160px;
+            left: 265px;
+            width: 220px;
+
+            &__title {
+                font-size: 16px;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+    
+            &__list {
+                display: flex;
+                flex-direction: column;
+            }
+    
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: 12px;
+                }
+    
+                a {
+                    display: inline-flex;
+                    font-size: 12px;
+                    color: $white;
+    
+                    svg {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

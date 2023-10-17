@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "MuseoCyrl";
+    min-width: 360px;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: $white;
+    color: $black;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    @include breakpoint;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $black;
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+input {
+    cursor: pointer;
+    outline: none;
+}

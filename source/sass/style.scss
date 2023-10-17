@@ -1,0 +1,18 @@
+//@import
+    //"./node_modules/bootstrap/scss/bootstrap";
+
+@import
+    "normalize",
+    "fonts",
+    "variables",
+    "mixins",
+    "global",
+    "animation";
+
+// block
+
+@import
+    "block/index/header.scss", "block/index/facts.scss",
+    "block/index/footer.scss", "block/index/price.scss",
+    "block/shop/description-block.scss", "block/modal.scss";
+    
