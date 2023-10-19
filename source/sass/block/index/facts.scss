@@ -322,6 +322,28 @@
                     font-size: 2.95vw;
                     text-align: center;
                 }
+
+                &.current {
+                
+                    a {
+                        &::before {
+                            top: -11px;
+                            left: -1px;
+                            width: 44px;
+                            height: 44px;
+
+                            @media (max-width: 532px) {
+                                left: -9px;
+                            }
+
+                            @media (max-width: 400px) {
+                                width: 36px;
+                                height: 36px;
+                                left: -8px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
