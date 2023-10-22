@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     height: 209px;
-    top: 1.88vw;
+    bottom: 1.88vw;
     right: 0;
     z-index: 10;
     background-image: url("../img/car.png");
@@ -13,26 +13,26 @@
     background-position: center;
 
     @media (max-width: $tablet-width) {
-        top: -32.58vw;
+        bottom: -32.58vw;
         height: 100%;
         background-image: url("../img/car-tablet.png");
         right: 0;
     }
 
     @media (max-width: 570px) {
-        top: -39.58vw;
+        bottom: -39.58vw;
     }
 
     @media (max-width: 480px) {
-        top: -49.58vw;
+        bottom: -49.58vw;
     }
 
     @media (max-width: 350px) {
-        top: -70.58vw;
+        bottom: -85.58vw;
     }
 
     @media (max-width: $mobile-width) {
-        top: -66.58vw;
+        bottom: -66.58vw;
         height: 100%;
         background-image: url("../img/car-mobile.png");
         right: -5%;
