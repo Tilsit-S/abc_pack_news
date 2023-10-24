@@ -249,6 +249,9 @@
                 border-radius: 18px;
                 border: 1px solid $white;
 
+                @media (max-width: 413px) {
+                    width: 143px;
+                }
             }
     
             &__item {
@@ -286,6 +289,11 @@
 
             @media (max-width: 500px) {
                 left: 210px;
+
+                @media (max-width: 413px) {
+                    left: 170px;
+                    width: 160px;
+                }
             }
 
             &__title {
