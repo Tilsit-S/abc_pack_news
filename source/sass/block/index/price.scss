@@ -13,8 +13,11 @@
 
     .card {
         overflow: hidden;
-        display: block;
-        min-height: 500px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        //min-height: 500px;
 
         &__info {
             margin: 15px 19px 16px 19px;
@@ -106,7 +109,7 @@
 
     /* Лента слайдов */
     .slick-track{
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         align-items: flex-start;
         margin-bottom: 40px;
@@ -116,7 +119,7 @@
     .slick-slide{
         overflow: hidden;
         width: 370px;
-        height: 100%;
+        height: auto;
         border-radius: 32px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #FFF;
@@ -228,7 +231,7 @@
     
         .card {
             overflow: hidden;
-            display: block;
+            //display: block;
     
             &__info {
                 margin: 16px 12px 14px 12px;
@@ -268,10 +271,7 @@
                 
             }
         }
-    
-        /* Слайдер запущен */
-        .slick-slider.slick-initialized{}
-    
+        
         /* Слайдер с точками */
         .slick-slider.slick-dotted{}
     
@@ -307,23 +307,7 @@
                 height: 196px;
             }
         }
-    
-        /* Слайд активный (показывается) */
-        .slick-slide.slick-active{}
-    
-        /* Слайд основной */
-        .slick-slide.slick-current{}
-    
-        /* Слайд по центру */
-        .slick-slide.slick-center{}
-    
-        /* Клонированный слайд */
-        .slick-slide.slick-cloned{}
-    
-        /* Стрелка */
-        .slick-arrow{
-        }
-    
+        
         /* Стрелка влево */
         .slick-arrow.slick-prev{
             display: block;
@@ -421,7 +405,7 @@
     
         .card {
             overflow: hidden;
-            display: block;
+            //display: block;
     
             &__info {
                 margin: 16px 12px 14px 12px;
