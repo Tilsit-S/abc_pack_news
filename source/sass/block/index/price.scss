@@ -14,6 +14,7 @@
     .card {
         overflow: hidden;
         display: block;
+        min-height: 500px;
 
         &__info {
             margin: 15px 19px 16px 19px;
@@ -75,6 +76,7 @@
     /* -------------------------------Слайдер--------------------------------- */
     .slick-slider{
         position: relative;
+        height: 100%;
         margin: 0 160px;
 
         @media (max-width: 1400px) {
@@ -106,6 +108,7 @@
     .slick-track{
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         margin-bottom: 40px;
     }
 
@@ -128,15 +131,6 @@
             //height: 14.24vw;
         }
     }
-
-    /* Слайд активный (показывается) */
-    .slick-slide.slick-active{}
-
-    /* Слайд основной */
-    .slick-slide.slick-current{}
-
-    /* Слайд по центру */
-    .slick-slide.slick-center{}
 
     /* Клонированный слайд */
     .slick-slide.slick-cloned{}
@@ -215,7 +209,6 @@
     }
 
     .slider {
-        
         position: relative;
     }
 }

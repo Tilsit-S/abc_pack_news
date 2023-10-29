@@ -76,10 +76,13 @@
         }
 
         &__date {
-            font-size: 1.12vw;
-            line-height: 1.28vw;
             padding: 1.12vw 0 0 0;
-            color: $text-gray;
+
+            p {
+                font-size: 1.12vw;
+                line-height: 1.28vw;
+                color: $text-gray;
+            }
         }
 
         &__title {
@@ -116,7 +119,7 @@
     .pagination {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 360px;
         font-size: 20px;
@@ -125,11 +128,11 @@
         margin: 0 auto;
 
         &__list {
-            width: 309px;
+            //width: 309px;
             display: flex;
             flex-direction: row;
             display: flex;
-            justify-content: space-between;
+            //justify-content: space-between;
             align-items: center;
             font-size: 21px;
             font-weight: 300;
@@ -142,6 +145,7 @@
                 width: 44px;
                 height: 44px;
                 font-size: 100%;
+                margin-right: 4px;
 
                 a:hover, a:active {
                     opacity: 0.8;
