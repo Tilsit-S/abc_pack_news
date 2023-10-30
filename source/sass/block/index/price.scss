@@ -14,10 +14,9 @@
     .card {
         overflow: hidden;
         display: flex;
-        height: 100%;
         flex-direction: column;
         justify-content: space-between;
-        //min-height: 500px;
+        min-height: 556px;
 
         &__info {
             margin: 15px 19px 16px 19px;
@@ -231,7 +230,7 @@
     
         .card {
             overflow: hidden;
-            //display: block;
+            min-height: 503px;
     
             &__info {
                 margin: 16px 12px 14px 12px;
@@ -351,7 +350,11 @@
         }
     
         .slick-dots li{
-            margin-bottom: 75px;
+            margin: 0 0 75px 0;
+
+            @media (max-width: 620px) {
+                margin: 40px 0 54px 0;
+            }
         }
     
         /* Активная точка */
@@ -382,7 +385,6 @@
         }
     
         .slider {
-            
             position: relative;
         }
     }

@@ -128,11 +128,9 @@
         margin: 0 auto;
 
         &__list {
-            //width: 309px;
             display: flex;
             flex-direction: row;
             display: flex;
-            //justify-content: space-between;
             align-items: center;
             font-size: 21px;
             font-weight: 300;
@@ -311,7 +309,7 @@
         }
 
         .pagination {
-            width: 335px;
+            width: auto;
 
             li {
                 display: flex;
@@ -320,6 +318,11 @@
                 width: 44px;
                 height: 44px;
                 font-size: 100%;
+
+                @media(max-width: 550px) {
+                    width: 36px;
+                    height: 36px;
+                }
 
                 a:hover, a:active {
                     opacity: 0.8;
@@ -391,6 +394,15 @@
                     display: none;
                 }
             }
+
+            &__date {
+                padding: 12px 0 0 0;
+    
+                p {
+                    font-size: 12px;
+                    line-height: normal;
+                }
+            }
     
             &__title {
                 font-size: 5.63vw;
@@ -412,9 +424,14 @@
         }
 
         .pagination {
-            width: 240px;
 
             li {
+
+                &:nth-child(6),
+                &:nth-child(7) {
+                    display: none;
+                }
+
                 a {
                     font-size: 16px;
                     line-height: normal;
