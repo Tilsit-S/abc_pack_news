@@ -65,9 +65,14 @@
         text-align: center;
         border-radius: 32px;
         background: $red;
-        box-shadow: 0px 4px 24px 0px $red;
         margin: 0 auto;
         margin-bottom: 60px;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 4px 24px 0px $red;
+            transition: all 0.3s;
+        }
     }
 
     &__shop-link {
@@ -82,9 +87,13 @@
         border: none;
         border-radius: 32px;
         background: $red;
-        box-shadow: 0px 4px 24px 0px $red;
         margin: 0 auto;
         margin-bottom: 100px;
+
+        &:hover {
+            box-shadow: 0px 4px 24px 0px $red;
+            transition: all 0.3s;
+        }
     }
 }
 

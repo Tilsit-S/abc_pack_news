@@ -48,15 +48,25 @@
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: $white;
 
+        &:hover {
+            box-shadow: 5px 5px 5px 0 rgba(180,193,213,.32);
+            transform: translateY(-3px);
+        }
+
         @media(max-width: 1000px) {
             width: 30.13vw;
             height: 36vw;
         }
 
         &__image {
-            background-image: url("../img/main/news/tubus.png");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            background-color: rgba(0, 0, 0, 0.10);
             background-size: contain;
             background-repeat: no-repeat;
+            height: 16.85vw;
 
             img {
                 width: 100%;
@@ -101,7 +111,7 @@
         }
 
         &__description {
-            display: none;
+            //display: none;
             font-size: 14px;
             line-height: 16px;
             color: $text-gray;
@@ -224,6 +234,10 @@
             border: 1px solid rgba(0, 0, 0, 0.12);
             box-shadow: 12px 12px 24px 0px rgba(180, 193, 213, 0.32);
             background: $white;
+
+            &:hover {
+                //transform: scale(1);
+            }
 
             @media (max-width: 500px) {
                 width: 100%;
