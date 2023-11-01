@@ -82,6 +82,11 @@
                 font-size: 1.12vw;
                 line-height: 1.28vw;
                 color: $text-gray;
+
+                @media(max-width: 900px) {
+                    font-size: 1.42vw;
+                    line-height: 1.58vw;
+                }
             }
         }
 
@@ -261,13 +266,16 @@
             }
 
             &__date {
-                font-size: 2.06vw;
-                line-height: normal;
                 margin: 1.18vw 0 1.18vw 0;
                 padding-top: 0;
 
-                @media (max-width: 500px) {
-                    font-size: 3.06vw;
+                p {
+                    font-size: 2.06vw;
+                    line-height: normal;
+
+                    @media (max-width: 700px) {
+                        font-size: 3.06vw;
+                    }
                 }
             }
     
