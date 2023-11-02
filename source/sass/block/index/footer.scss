@@ -82,12 +82,17 @@
         }
 
         &__item {
+            
             &:not(:last-child) {
                 margin-bottom: 16px;
             }
 
             a {
                 color: $white;
+
+                &:hover {
+                    opacity: 0.5;
+                }
 
                 @media (max-width: 910px) {
                     font-size: 12px;

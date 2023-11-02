@@ -17,9 +17,14 @@
         line-height: 18px;
         color: $tint-red;
         margin-bottom: 1.55vw;
+        cursor: default;
 
         a {
             color: $tint-red;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 
@@ -90,6 +95,7 @@
         background: $red;
         margin: 0 auto;
         margin-bottom: 100px;
+        transition: all 0.3s;
 
         &:hover {
             box-shadow: 0px 4px 24px 0px $red;

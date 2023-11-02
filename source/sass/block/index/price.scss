@@ -61,6 +61,7 @@
             font-weight: 700;
             color: $red;
             cursor: pointer;
+            transition: all 0.8s;
 
             &:hover {
                 background: $red;
@@ -81,6 +82,7 @@
             line-height: normal;
             padding: 18px 0;
             cursor: pointer;
+            transition: all 0.8s;
 
             &:hover {
                 background: $white;
@@ -138,10 +140,11 @@
         border-radius: 32px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: #FFF;
+        transition: all 0.3s;
 
         &:hover {
-            //transform: translateY(-1px);
             box-shadow: 12px 12px 14px 0px rgba(180, 193, 213, 0.32);
+            transition: all 0.3s;
         }
 
         &:not(:first-child) {

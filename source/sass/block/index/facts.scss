@@ -12,9 +12,14 @@
         line-height: 18px;
         color: $tint-red;
         margin-bottom: 1.55vw;
+        cursor: default;
 
         a {
             color: $tint-red;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 
@@ -47,10 +52,12 @@
         border-radius: 32px;
         border: 1px solid rgba(0, 0, 0, 0.12);
         background: $white;
+        transition: all 0.3s;
 
         &:hover {
             box-shadow: 5px 5px 5px 0 rgba(180,193,213,.32);
             transform: translateY(-3px);
+            transition: all 0.3s;
         }
 
         @media(max-width: 1000px) {
@@ -136,6 +143,10 @@
             font-size: 0.88vw;
             line-height: 16px;
             color: $tint-red;
+
+            &:hover {
+                opacity: 0.7;
+            }
 
             @media(max-width: 1000px) {
                 font-size: 1.58vw;
