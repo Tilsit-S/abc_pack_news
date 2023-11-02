@@ -91,6 +91,7 @@
             p {
                 font-size: 1.12vw;
                 line-height: 1.28vw;
+                margin-bottom: 0.42vw;
                 color: $text-gray;
 
                 @media(max-width: 900px) {
@@ -104,6 +105,7 @@
             font-size: 1.23vw;
             line-height: 1.31vw;
             font-weight: 500;
+            margin-bottom: 0.42vw;
 
             @media(max-width: 1000px) {
                 font-size: 1.63vw;
@@ -111,10 +113,20 @@
         }
 
         &__description {
-            //display: none;
+            max-height: 5.21vw;
             font-size: 14px;
             line-height: 16px;
             color: $text-gray;
+            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 80%);
+
+            @media (max-width: 1100px) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            @media (max-width: 1000px) {
+                max-height: 10.24vw;
+            }
         }
 
         &__link {
@@ -265,6 +277,8 @@
             }
 
             &__title {
+                    font-size: 2.65vw;
+
                 @media (max-width: 500px) {
                     font-size: 4.65vw;
                 }
@@ -288,8 +302,8 @@
                     font-size: 2.06vw;
                     line-height: normal;
 
-                    @media (max-width: 700px) {
-                        font-size: 3.06vw;
+                    @media (max-width: 500px) {
+                        font-size: 4.06vw;
                     }
                 }
             }
@@ -308,6 +322,7 @@
             &__description {
                 overflow: hidden;
                 display: block;
+                max-height: 20.24vw;
                 font-size: 2.06vw;
                 line-height: normal;
                 padding: 0 0 0.59vw 0;
@@ -326,7 +341,7 @@
 
                 @media (max-width: 500px) {
                     font-size: 4.36vw;
-                    bottom: 5.4vw;
+                    bottom: 3.4vw;
                 }
             }
         }
@@ -434,6 +449,7 @@
             }
     
             &__description {
+                max-height: 26.24vw;
                 font-size: 3.75vw;
                 line-height: normal;
                 padding: 0;
